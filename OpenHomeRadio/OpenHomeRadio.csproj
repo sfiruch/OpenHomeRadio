@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>OpenHomeRadio</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsPackable>true</IsPackable>
+    <PackageId>sfiruch.OpenHomeRadio</PackageId>
+    <Version>0.1.0</Version>
+    <Description>Send and receive 868 MHz home-automation radio protocols (the Domino and IoHome protocol families: blinds, windows, lights, switches) with an ADALM-PLUTO software-defined radio. Pure managed code, async-first, runs on Linux arm64.</Description>
+    <PackageTags>sdr pluto plutosdr adalm-pluto 868mhz fsk home-automation blinds radio iot</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/sfiruch/OpenHomeRadio</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <DebugSymbols>true</DebugSymbols>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedAllSources>true</EmbedAllSources>
+    <IncludeSource>true</IncludeSource>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="OpenHomeRadio.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" Link="README.md" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" Link="LICENSE" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

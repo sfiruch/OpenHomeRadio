@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OpenHomeRadio.Cli</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>openhomeradio</ToolCommandName>
+    <PackageId>sfiruch.OpenHomeRadio.Cli</PackageId>
+    <Version>0.1.0</Version>
+    <Description>Command-line tool for OpenHomeRadio: send, receive, capture and decode 868 MHz home-automation radio protocols (the Domino and IoHome protocol families) with an ADALM-PLUTO software-defined radio.</Description>
+    <PackageTags>sdr pluto plutosdr adalm-pluto 868mhz fsk home-automation blinds radio iot cli dotnet-tool</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/sfiruch/OpenHomeRadio</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine" Version="2.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenHomeRadio\OpenHomeRadio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" Link="README.md" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" Link="LICENSE" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

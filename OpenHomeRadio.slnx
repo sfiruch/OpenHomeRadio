@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="OpenHomeRadio/OpenHomeRadio.csproj" />
+  <Project Path="OpenHomeRadio.Cli/OpenHomeRadio.Cli.csproj" />
+  <Project Path="OpenHomeRadio.Tests/OpenHomeRadio.Tests.csproj" />
+  <Folder Name="/Examples/">
+    <Project Path="Examples/SharedRadio/SharedRadio.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,42 @@
+## .NET build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+artifacts/
+*.nupkg
+*.snupkg
+
+## IDEs
+.vs/
+.vscode/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.rsuser
+*.sln.iml
+
+## Test results
+[Tt]est[Rr]esult*/
+*.trx
+coverage*.xml
+
+## Radio captures (raw IQ recordings can be large and may contain signals from your own installation)
+captures/
+*.complex16s
+*.iq
+*.cs16
+*.cu8
+
+## Local secrets / configuration
+appsettings.*.local.json
+*.key
+
+## Claude Code
+.claude/
+
+# Example state (contains a system key)
+*-state.json
